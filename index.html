@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title> Snap Test </title>
+    <meta content="Snapchat" property="og:site_name" />
+    <meta content="The fastest way to share a moment!" property="og:title" />
+    <meta content="https://dwnnis.github.io/snap-sticker-test/assets/img/test-sticker.png" property="snapchat:sticker"/>
+  </head>
+  <body>
+    <!-- Other Page HTML -->
+
+    <div class="snapchat-creative-kit-share" data-share-url="https://dwnnis.github.io/snap-sticker-test/assets/img/test-sticker.png"></div>
+    <!-- Other Page HTML -->
+    <script>
+      // Load the SDK asynchronously
+      (function (d, s, id) {
+        var js,
+          sjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://sdk.snapkit.com/js/v1/create.js";
+        sjs.parentNode.insertBefore(js, sjs);
+      })(document, "script", "snapkit-creative-kit-sdk");
+    </script>
+  </body>
+</html>
